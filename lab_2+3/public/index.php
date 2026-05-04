@@ -12,8 +12,7 @@ $is_logged_in = isset($_SESSION['user_id']);
 $page = $_GET['page'] ?? ($is_logged_in ? 'home' : 'login');
 
 // 4. Access Control (Security)
-// If they are NOT logged in, and they try to visit a protected page, force them to login.
-// We only allow guests to see 'login' and 'register'.
+
 $public_pages = ['login', 'register'];
 
 if (!$is_logged_in && !in_array($page, $public_pages)) {
