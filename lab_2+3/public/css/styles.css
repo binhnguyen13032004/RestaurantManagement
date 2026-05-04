@@ -1,0 +1,154 @@
+/* General Body Styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header & Navbar tweaks */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Override the inline HTML style to make the logo a reasonable size */
+header img {
+    width: 400px !important; 
+    height: auto !important;
+}
+
+/* Card Styling for the Menu */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+/* Hover effect: lifts the card slightly */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Uniform image sizing */
+.card-img-top {
+    height: 220px;
+    object-fit: cover; /* Prevents the image from stretching/squishing */
+}
+
+/* Customizing the Bootstrap Buttons */
+.btn-primary {
+    background-color: #d62828; /* An appetizing red */
+    border-color: #d62828;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #bc2020;
+    border-color: #bc2020;
+}
+
+.btn-success {
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(40, 167, 69, 0.3);
+}
+
+.btn-danger {
+    border-radius: 8px;
+}
+
+/* Add a subtle padding and background to the container holding the item details */
+.item-details-container .row {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+}
+
+/* Style the large item image */
+.detail-image {
+    max-height: 400px;
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border: 3px solid #f8f9fa;
+}
+
+/* Custom styling for the price tag */
+.price-tag {
+    color: #d62828; /* Matches the primary buttons from the main page */
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* Badge styling for the category */
+.badge.bg-secondary {
+    font-size: 0.9rem;
+    padding: 0.5em 0.8em;
+    background-color: #6c757d !important;
+}
+
+/* Make the lead text a bit easier to read */
+.lead {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* --- Inventory Management Table Styling --- */
+
+/* Add comfortable padding and align items vertically in the middle */
+.custom-table th, 
+.custom-table td {
+    padding: 16px 24px;
+    vertical-align: middle;
+}
+
+/* Style the table headers to look more like a professional dashboard */
+.custom-table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    border-bottom: none;
+}
+
+/* Ensure the dark header matches standard dark themes */
+.table-dark {
+    background-color: #212529;
+}
+
+/* Make row borders subtle */
+.custom-table td {
+    border-color: #f1f3f5;
+}
+
+/* --- Form Styling --- */
+
+/* Make form inputs look slightly softer */
+.form-control {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Custom focus ring matching the restaurant's primary red color */
+.form-control:focus {
+    border-color: #d62828;
+    box-shadow: 0 0 0 0.25rem rgba(214, 40, 40, 0.25);
+}
+
+/* Fix the border for the price input group */
+.input-group-text {
+    border-radius: 8px 0 0 8px;
+    border-right: none;
+    color: #6c757d;
+}
+
+/* Label adjustments */
+.form-label {
+    font-size: 0.95rem;
+    color: #495057;
+}
