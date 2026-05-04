@@ -1,4 +1,4 @@
--- Create the users table first (since it has no dependencies)
+-- Create the users table
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255) NOT NULL UNIQUE,
@@ -14,7 +14,5 @@ CREATE TABLE items (
     price DECIMAL(10,2) NOT NULL,
     category_id INT,
     
-    -- Optional but highly recommended: 
-    -- If you have a categories table, link it with a Foreign Key
-    -- FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE SET NULL
+
 );
